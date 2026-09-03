@@ -1,4 +1,5 @@
-// check notes q1
+// check notes q1 for time complexity chart
+// tips : ekta line kotobar run korbe sheta n hishebe define hoy
 
 function sumFnOne(n) {
     let sum = 0
