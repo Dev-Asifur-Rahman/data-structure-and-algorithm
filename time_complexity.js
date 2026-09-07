@@ -17,8 +17,29 @@ function sumFnTwo(n){
 
 // time complexity O(1)
 
+function nestedLoopOne(n){
+    for(let i =0 ; i<= n; i++){ //n
+         for(let j =0 ; j<= n; j++){ //n
+            console.log(i,j)
+         }
+    }
+}
 
+// time complexity n * n = n²
+
+function nestedLoopTwo(n){
+    for(let i =0 ; i<= n; i++){ //n
+         for(let j =0 ; j<= 3; j++){ 
+            console.log(i,j)
+         }
+    }
+}
+
+// time complexity (n + 3) = n 
+// second loop not depends on n its a constant
 
 
 // console.log(sumFnOne(10))
 // console.log(sumFnTwo(10))
+// console.log(nestedLoopOne(2))
+// console.log(nestedLoopTwo(2))
