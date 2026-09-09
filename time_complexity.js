@@ -36,7 +36,7 @@ function nestedLoopTwo(n){
 }
 
 // time complexity (n + 3) = n 
-// second loop not depends on n its a constant
+// second loop does not depend on n. its a constant
 
 
 // console.log(sumFnOne(10))
