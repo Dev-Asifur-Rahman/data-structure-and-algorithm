@@ -10,4 +10,5 @@
 4.What is Space Complexity ?
 = Space complexity is the amount of memory an algorithm needs to run as the input size increases.
 
-
+5.What is LogN ?
+= Log N tells us how many times we can divide a number by 2 until it becomes 1.
