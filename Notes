@@ -10,3 +10,5 @@
 // | O(n³)               | Cubic               | Usually slow for large inputs   
 // | O(2ⁿ)               | Exponential     | Very slow for large inputs      
 // | O(n!)               | Factorial           | Extremely slow for large inputs 
+
+//2. logN == log₂N defines same
