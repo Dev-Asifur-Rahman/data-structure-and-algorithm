@@ -1,6 +1,6 @@
 1. time complexity chart
 
- Time Complexity  Name          Performance                     
+ ## Time Complexity  Name          Performance                     
 
   O(1)                   Constant          Excellent                       
   O(log n)            Logarithmic      Very good                       
