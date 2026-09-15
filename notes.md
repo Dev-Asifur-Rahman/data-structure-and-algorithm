@@ -1,15 +1,15 @@
-1. time complexity chart
+## 1.Time Complexity Chart
 
- ## Time Complexity  Name          Performance                     
-
-  O(1)                   Constant          Excellent                       
-  O(log n)            Logarithmic      Very good                       
-  O(n)                  Linear               Good                            
-  O(n log n)         Linearithmic     Generally efficient             
-  O(n²)                 Quadratic         Can be slow                     
-  O(n³)                 Cubic                Usually slow for large inputs   
-  O(2ⁿ)                 Exponential      Very slow for large inputs      
-  O(n!)                 Factorial            Extremely slow for large inputs 
+| Time Complexity | Name         | Performance                  |
+|-----------------|--------------|------------------------------|
+| O(1)            | Constant     | Excellent                    |
+| O(log n)        | Logarithmic  | Very good                    |
+| O(n)            | Linear       | Good                         |
+| O(n log n)      | Linearithmic | Generally efficient          |
+| O(n²)           | Quadratic    | Can be slow                  |
+| O(n³)           | Cubic        | Usually slow for large inputs|
+| O(2ⁿ)           | Exponential  | Very slow for large inputs   |
+| O(n!)           | Factorial    | Extremely slow for large inputs |
 
 2. logN == log₂N defines same
 
