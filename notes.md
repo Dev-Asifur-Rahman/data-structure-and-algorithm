@@ -1,43 +1,47 @@
 ### 1. Time Complexity Chart
-| Time Complexity | Name | Performance |
-|:---:|:---:|:---:|
-| O(1) | Constant | Excellent |
-| O(log n) | Logarithmic | Very good |
-| O(n) | Linear | Good |
-| O(n log n) | Linearithmic | Generally efficient |
-| O(n²) | Quadratic | Can be slow |
-| O(n³) | Cubic | Usually slow for large inputs |
-| O(2ⁿ) | Exponential | Very slow for large inputs |
-| O(n!) | Factorial | Extremely slow for large inputs |
+| Time Complexity |     Name     |           Performance           |
+| :-------------: | :----------: | :-----------------------------: |
+|      `O(1)`      |   `Constant`   |            Excellent            |
+|    `O(log n)`     | `Logarithmic`  |            Very good            |
+|      `O(n)`       |    `Linear`    |              Good               |
+|   `O(n log n)`    | `Linearithmic` |       Generally efficient       |
+|      `O(n²)`      |  `Quadratic`   |           Can be slow           |
+|      `O(n³)`      |    `Cubic`     |  Usually slow for large inputs  |
+|      `O(2ⁿ)`      | `Exponential`  |   Very slow for large inputs    |
+|      `O(n!)`      |  `Factorial`   | Extremely slow for large inputs |
 
 ### 2. logN == log₂N defines same
 
- 3.Array methods O Notation
-    arr[i]            O(1)             Index দিয়ে সরাসরি element access করা যায়।
-    push()         O(1)              Arrayএর শেষে element যোগ করে।
-    pop()          O(1)              Arrayএর শেষের element সরায়।
-    shift()          O(n)              বাকি elementগুলোকে এক ঘর করে সামনে আনতে হয়।
-    unshift()      O(n)              নতুন elementএর জন্য বাকি elementগুলোকে shift করতে হয়।
-    includes()    O(n)              Element খুঁজতে পুরো array পরীক্ষা করতে হতে পারে।
-    indexOf()    O(n)               Elementএর index খুঁজতে একাধিক element পরীক্ষা করতে হয়।
-    find()           O(n)               শর্ত পূরণকারী element খুঁজতে একাধিক element পরীক্ষা করতে হয়।
-    map()          O(n)               প্রতিটি elementএর ওপর callback চালায়।
-    filter()          O(n)               প্রতিটি element পরীক্ষা করে নতুন array তৈরি করে।
-    reduce()      O(n)               প্রতিটি element process করে একটি result তৈরি করে।
-    slice()          O(n)               নির্বাচিত elementগুলো copy করে নতুন array তৈরি করে।
-    splice()        O(n)               Element insert বা delete করলে অন্য element shift হতে পারে।
-    sort()           O(n log n)     Elementগুলোকে সাজাতে একাধিক comparison করতে হয়।
+### 3.Array methods O Notation
+| Method | Time Complexity | Reason |
+|:---:|:---:|:---:|
+| `arr[i]` | `O(1)` | Index দিয়ে সরাসরি element access করা যায়। |
+| `push()` | `O(1)` | Array-এর শেষে element যোগ করে। |
+| `pop()` | `O(1)` | Array-এর শেষের element সরায়। |
+| `shift()` | `O(n)` | বাকি elementগুলোকে এক ঘর করে সামনে আনতে হয়। |
+| `unshift()` | `O(n)` | নতুন element-এর জন্য বাকি elementগুলোকে shift করতে হয়। |
+| `includes()` | `O(n)` | Element খুঁজতে পুরো array পরীক্ষা করতে হতে পারে। |
+| `indexOf()` | `O(n)` | Element-এর index খুঁজতে একাধিক element পরীক্ষা করতে হয়। |
+| `find()` | `O(n)` | শর্ত পূরণকারী element খুঁজতে একাধিক element পরীক্ষা করতে হয়। |
+| `map()` | `O(n)` | প্রতিটি element-এর ওপর callback চালায়। |
+| `filter()` | `O(n)` | প্রতিটি element পরীক্ষা করে নতুন array তৈরি করে। |
+| `reduce()` | `O(n)` | প্রতিটি element process করে একটি result তৈরি করে। |
+| `slice()` | `O(n)` | নির্বাচিত elementগুলো copy করে নতুন array তৈরি করে। |
+| `splice()` | `O(n)` | Element insert বা delete করলে অন্য element shift হতে পারে। |
+| `sort()` | `O(n log n)` | Elementগুলোকে সাজাতে একাধিক comparison করতে হয়। |
 
-4.Object Methods O Notaion 
-    Object.hasOwn()                              O(1)       average-নিজস্ব property আছে কি না পরীক্ষা করে।
-    Object.is()                                         O(1)      দুটি value একই কি না পরীক্ষা করে।
-    Object.create()                                 O(1)      নতুন object তৈরি করে।
-    Obj.key                                             O(1)      average-Key দিয়ে সরাসরি value access করা যায়.
-    Object.keys()                                    O(n)      সব key নিয়ে array তৈরি করে।
-    Object.values()                                 O(n)       সব value নিয়ে array তৈরি করে।
-    Object.entries()                                O(n)       সব key-value pair নিয়ে array তৈরি করে।
-    Object.fromEntries()                        O(n)       Key-value pair থেকে object তৈরি করে।
-    Object.freeze()                                 O(n)      Object freeze করে।
-    Object.seal()                                     O(n)      Property যোগ বা delete করা বন্ধ করে।
-    Object.getOwnPropertyNames()     O(n)       সব নিজস্ব property-এর নাম নিয়ে array তৈরি করে.
-    Object.assign()                                 O(n+m) একাধিক object-এর property copy করে।
+### 4.Object Methods O Notaion
+| Method | Time Complexity | Reason |
+|:---:|:---:|:---:|
+| `Object.hasOwn()` | `O(1)` | নিজস্ব property আছে কি না পরীক্ষা করে। |
+| `Object.is()` | `O(1)` | দুটি value একই কি না পরীক্ষা করে। |
+| `Object.create()` | `O(1)` | নতুন object তৈরি করে। |
+| `Obj.key` | `O(1)` | Key দিয়ে সরাসরি value access করা যায়। |
+| `Object.keys()` | `O(n)` | সব key নিয়ে array তৈরি করে। |
+| `Object.values()` | `O(n)` | সব value নিয়ে array তৈরি করে। |
+| `Object.entries()` | `O(n)` | সব key-value pair নিয়ে array তৈরি করে। |
+| `Object.fromEntries()` | `O(n)` | Key-value pair থেকে object তৈরি করে। |
+| `Object.freeze()` | `O(n)` | Object-এর property freeze করে। |
+| `Object.seal()` | `O(n)` | Property যোগ বা delete করা বন্ধ করে। |
+| `Object.getOwnPropertyNames()` | `O(n)` | সব নিজস্ব property-এর নাম নিয়ে array তৈরি করে। |
+| `Object.assign()` | `O(n + m)` | একাধিক object-এর property copy করে। |
