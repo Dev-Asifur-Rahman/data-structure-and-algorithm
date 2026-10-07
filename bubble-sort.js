@@ -1,10 +1,15 @@
 // prottekta index er value er jonne for loop calano hoy
-// sorts using index
-// array sorts from last and index number reduces by 1
+
+// 1. j + 1 er jonne last index auto sorted tai (len - 1)
+// 2. jehetu every i iteration er jonne last theke ekta ekta sorting length komtese
+
+// example
+//  i = 1 --> last index sorted [ ns, ns, sorted]
+//  i = 2 --> last index - 1 sorted [ns, sorted, sorted]
 
 function bubbleSortFn(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length - 1; j++) {
+  for (let i = 0; i < arr.length - 1; i++) { // 1
+    for (let j = 0; j < arr.length - i - 1; j++) { // 2
       if (arr[j] > arr[j + 1]) {
         let temp = arr[j];
         arr[j] = arr[j + 1];
